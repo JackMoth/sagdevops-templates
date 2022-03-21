@@ -16,7 +16,7 @@
 #   limitations under the License.
 #
 ###############################################################################
-alias: sag-apigateway-server
+alias: i8c-apigateway-server
 description: API Gateway Server provisioning and configuration
 
 environments:
@@ -93,6 +93,7 @@ templates:
                   - -XX:+UseParNewGC
                   - -XX:+UseConcMarkSweepGC
                   - -XX:+CMSIncrementalMode
+                  - "-XX:+IgnoreUnrecognizedVMOptions"
                   - -XX:ParallelGCThreads=2
                   - -XX:NewRatio=2
                   - -XX:SurvivorRatio=8

@@ -1,4 +1,4 @@
-alias: sag-apigateway-cluster
+alias: i8c-apigateway-cluster
 description: API Gateway provisioning and cluster configuration
 
 environments:
