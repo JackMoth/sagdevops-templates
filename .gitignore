@@ -2,3 +2,5 @@ build/*
 templates/jenkins/webapps/*.war
 /.project
 **/*.ascii
+
+*.code-workspace

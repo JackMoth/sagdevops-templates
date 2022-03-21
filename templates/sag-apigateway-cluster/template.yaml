@@ -14,7 +14,7 @@ environments:
     agw.diagnostic.port:               9999                             
     agw.jmx.port:                      5559                             
     agw.memory.init:                   128                             
-    agw.memory.max:                    256                             
+    agw.memory.max:                    2048                             
     agw.install.service:               false
     agw.fixes:                         ALL 
 
@@ -59,6 +59,7 @@ templates:
                       - "-XX:+PrintGCCause"
                       - "-XX:+PrintAdaptiveSizePolicy"
                       - "-XX:+UseGCLogFileRotation"
+                      - "-XX:+IgnoreUnrecognizedVMOptions"
                       - "-XX:NumberOfGCLogFiles=5"
                       - "-XX:GCLogFileSize=10M"
                       - "-Xloggc:%OSGI_INSTALL_AREA%/logs/gc_agw.log"
