@@ -93,7 +93,7 @@ templates:
                   - -XX:+UseParNewGC
                   - -XX:+UseConcMarkSweepGC
                   - -XX:+CMSIncrementalMode
-                  - "-XX:+IgnoreUnrecognizedVMOptions"
+                  - -XX:+IgnoreUnrecognizedVMOptions
                   - -XX:ParallelGCThreads=2
                   - -XX:NewRatio=2
                   - -XX:SurvivorRatio=8
